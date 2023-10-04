@@ -55,7 +55,7 @@
     background-image:linear-gradient(45deg, #ffaa00 40%,#000000 100%,#eeeeee 5%);
     background-repeat: no-repeat; 
     background-position: center;
-    height: 225vh;
+    height: 100%;
     background-size: cover;
 }
 
