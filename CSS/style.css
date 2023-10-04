@@ -55,7 +55,7 @@
     background-image:linear-gradient(45deg, #ffaa00 40%,#000000 100%,#eeeeee 5%);
     background-repeat: no-repeat; 
     background-position: center;
-    height: 225vh;
+    height: 100%;
     background-size: cover;
 }
 
@@ -492,7 +492,7 @@ ul li:hover .titulo{
     color: black;
 }
 .filmesAss{
-    font-size: 40px;
+    font-size: 38.3px;
     font-family: 'Roboto Mono', monospace;
     font-weight: bold;
     color: black;
@@ -514,7 +514,7 @@ ul li:hover .titulo{
     margin-top: 0px;
 
 }
-.containerLista{
+.containerGun, .containerAranha, .containerFlash, .containerBatman, .containerNadaNoFront, .containerJoker, .containerFNAF, .containerFreira{
     background-color: white;
     opacity: 0.7;
     position: relative;
@@ -528,11 +528,13 @@ ul li:hover .titulo{
     padding: 5px;
 } 
 
-.containerLista:hover{
+.containerGun:hover, .containerAranha:hover, .containerFlash:hover, .containerBatman:hover, .containerNadaNoFront:hover, .containerJoker:hover, .containerFNAF:hover, .containerFreira:hover{
+    /* background-image: url(/IMAGENS/); */
     background-color: #ffaa00;
     transform:skewX(-20deg), translate(-10%,-10%);
     text-decoration: none;
 }
+
 
 /* Página dos trailers */
 
@@ -637,3 +639,32 @@ iframe{
     margin-left: 1000px;
 }
 
+.escritaTrailer, .escritaAranha, .escritaNadaNoFront, .escritaJoker, .escritaFNAF, .escritaFreira{
+    position: absolute;
+    margin-top: -100px;
+    font-family:'Nunito', sans-serif;
+    font-size: 50px;
+    color:#030200;
+    border-color: #1A1B27;
+    border: solid;
+    background-image: linear-gradient(145deg, #000000 -5%, #FADC63 50%, #000000 105%);
+    border-radius: 50px;
+    width: 450px;
+    
+    text-align: center;
+}
+.escritaAranha{
+    width: 1000px;
+}
+.escritaNadaNoFront{
+    width: 600px;
+}
+.escritaJoker{
+    width: 200px;
+}
+.escritaFNAF{
+    width: 500px;
+}
+.escritaFreira{
+    width: 200px;
+}
