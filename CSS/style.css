@@ -1,0 +1,639 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Nunito:wght@700&family=Roboto+Condensed:ital@1&family=Roboto+Mono:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Bree serif' , serif;
+}
+
+/* Bodys dos sites */
+
+.bodyRegistro {
+    font-family: 'Bree Serif', serif;
+    background-image: linear-gradient(45deg, #ffaa00 40%, #000000 100%, #eeeeee 5%);
+    height: 110vh;
+    background-size: cover; /* informa ao navegador que ele deve se certificar de que a imagem cobrirá sempre o container inteiro */
+    background-position: center;
+    background-repeat: no-repeat; /* definir como uma imagem de fundo se repete na tela */
+}
+
+.bodyLogin {
+    font-family: 'Bree Serif', serif;
+    background-image: linear-gradient(45deg, #ffaa00 40%, #000000 100%, #eeeeee 5%);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bodyPlanos {
+    font-family: 'Bree Serif', serif;
+    background-image: linear-gradient(45deg, #ffaa00 40%, #000000 100%, #eeeeee 5%);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bodyFilmes {
+    background-image:linear-gradient(45deg, #ffaa00 40%,#000000 100%,#eeeeee 5%);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
+}
+
+.bodyTrailers {
+    background-image:linear-gradient(35deg, #ffaa00 10%,#000000 100%,#eeeeee 5%);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
+}
+
+.bodyQS {
+    background-image:linear-gradient(45deg, #ffaa00 40%,#000000 100%,#eeeeee 5%);
+    background-repeat: no-repeat; 
+    background-position: center;
+    height: 225vh;
+    background-size: cover;
+}
+
+/* Barra dos botões de navegação */
+
+.containerNav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative; /* é usado quando queremos alterar a posição de um elemento tendo como referência a posição inicial dele */
+}
+
+.barraNav {
+    font-size: 1.25rem; /* é o tamanho de fonte do elemento-raiz do documento */
+}
+
+.botoesNav, .msg {
+    text-decoration: none;
+}
+
+.botoesNav {
+    padding: 0 4rem;
+    margin: 0;
+    color: white;
+    font-weight: 500;
+    font-size: 28px;
+    transition: font-size 0.4s;
+}
+
+.botoesNav:hover {
+    font-size: 35px;
+} 
+
+nav {
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+}
+
+/* Logo da bomba no canto superior direito */
+
+.bombinho {
+    display: flex;
+    width: 240px;
+    margin-top: 30px;
+    position: absolute; /* indica que o elemento ficará em uma posição fixa em relação à página */
+}
+
+.bombinho:hover {
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+
+/* Toda a parte de caixa de formulário e informações do registro e do login */ 
+
+.forma {
+    display: flex;
+    justify-content: center;
+    padding-top: 8rem;
+}
+
+.formulario1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw; /* vh e vw = janela de exibição do site (100vh = 100% da tela) */
+    height: 60vh;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px 0px #FADC63;
+    background-color: white;
+}
+
+.formulario2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+    height: 75vh;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px 0px #FADC63;
+    background-color: white;
+}
+
+h2 {
+    margin: 1.5rem 0 2rem 0;
+    text-align: center;
+}
+
+.caixaDeRequerimento {
+    padding-left: 16px;
+    opacity: 0.75;
+}
+
+.caixaDeTexto {  
+    display: flex;
+    border-radius: 50px;
+    border-style: none;
+    outline: none; /* contorno da caixa */
+    margin-top: 8px;
+    padding: 12px 24px;
+    width: 250px;
+    background-color: #eaeeed;
+}
+
+.caixaDeTexto:focus {
+    opacity: 0.7;
+}
+
+.botaoRegistro {
+    padding: 12px 48px;
+    border-radius: 50px;
+    color: white;
+    margin-top: 1rem;
+    cursor: pointer;
+    background-color: #1A1B27;
+    font-weight: 400;
+    width: 100%;
+}
+
+.botaoRegistro:hover {
+    opacity: 0.8;
+    transform: scale(1.13);
+    transition: transform 1s;
+}
+
+.forma-botao {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.registro {
+    padding-left: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #2a91d6;
+}
+
+.registro:hover {
+    opacity: 0.8;
+}
+
+.botaoLogin {
+    padding: 12px 48px;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border-width: 0;
+    background-color: #1A1B27;
+    font-weight: 400;
+    width: 100%;
+}
+
+.botaoLogin:hover {
+    opacity: 0.8;
+    transform: scale(1.13);
+    transition: transform 1s;
+}
+
+/* Toda a parte de caixa de formulários e informações da página de planos */
+
+.planos {
+    display: flex;
+    border-radius: 50px;
+    border-style: none;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 19px;
+}
+
+.formaPlanos {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 8rem;
+}
+
+.formaCaixa {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 40vh;
+    height: 55vh;
+    border-radius: 12px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0px 0px 20px 0px #FADC63;
+}
+
+.botaoAss {
+    padding: 14px;
+    width: 70%;
+    border-radius: 50px;
+    color: rgb(251, 255, 0);
+    cursor: pointer;
+    outline: none;
+    border-width: 0;
+    background-color: #1A1B27;
+    font-size: 17px;
+}
+
+.botaoAss:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+    transition: transform 0.4s;
+    color: #000000;
+    background-color: rgb(251, 255, 0);
+    font-weight: 600;
+}
+
+.golpe {
+    font-size: 13px;
+}
+
+.linksBotaoAss {
+    text-decoration: none;
+    color: rgb(251, 255, 0);
+}
+
+/* Todo o footer */
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bree Serif', serif;
+}
+
+.copyrightLogin
+{
+    display: flex;
+    padding-left: 10px;
+}
+
+.copyrightFilmes {
+    padding-left: 10px;
+    position: absolute;
+}
+
+.copyrightPlanos {
+    display: flex;
+    padding-left: 10px;
+}
+
+.copyrightRegistro {
+    display: flex;
+    padding-left: 10px;
+}
+
+.ulFilmes {
+    position: relative;
+    display: flex;
+    padding-top: 80px;
+}
+
+.ulPlanos {
+    position: relative;
+    display: flex;
+    padding-top: 80px;
+}
+
+.ulLogin {
+    position: relative;
+    display: flex;
+    padding-top: 80px;
+}
+
+ul{
+    position: relative;
+    display: flex;
+    gap: 25px;
+    padding-top: 40px;
+}
+
+.ulLogin{
+    position: relative;
+    display: flex;
+    gap: 25px;
+    padding-top: 80px;
+}
+
+.ulRegistro{
+    position: relative;
+    display: flex;
+    gap: 25px;
+    padding-top: 80px;
+}
+
+.ulPlanos{
+    position: relative;
+    display: flex;
+    gap: 25px;
+    margin-top: 50px;
+}
+
+ul li{
+    position: relative;
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 1);
+    transition: 0.5s;
+}
+
+ul li:hover{
+    width: 180px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    background: linear-gradient(45deg, var(--i), var(--j));
+    opacity: 0;
+    transition: 0.5s;
+}
+
+ul li:hover::before{
+    opacity: 1;
+}
+
+ul li::after{
+    content:'';
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+
+    opacity: 0;
+    transition: 0.5s;
+    z-index: -1;
+    filter: blur(15px);
+}
+
+ul li:hover::after{
+    opacity: 0.5;
+}
+
+ul li:hover i{
+    transform: scale(0);
+    font-size: 1.75cm;
+    transition-delay: 0.25s;
+}
+
+ul li span{
+    position: absolute;
+}
+
+ul li .titulo{
+    color: #fff;
+    font-size: 0.5cm;
+    text-transform: uppercase;
+    letter-spacing: 0.1cm;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+ul li:hover .titulo{
+    transform: scale(1);
+    transition-delay: 0s;
+    
+}
+
+.logoFace{
+    height: 68px; 
+    width: 68px;
+    
+}
+
+.logoZap{
+    height: 69px; 
+    width: 69px;
+}
+
+.logoTt{
+    height: 70px; 
+    width: 70px;
+}
+
+.logoInsta{
+    height: 68px; 
+    width: 68px;
+}
+
+.logoFace:hover{
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0s;
+    width: 180px;
+}
+
+.logoZap:hover{
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0s;
+    width: 180px;
+}
+
+.logoTt:hover{
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0s;
+    width: 180px;
+}
+
+.logoInsta:hover{
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0s;
+    width: 180px;
+}
+
+/* lista dos filmes */
+
+.containerTudo{
+    padding-top: 150px;
+    padding-left: 400px; 
+}
+.escritaFilmes a{
+    font-size: 30px;
+    font-family:'Nunito', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+.filmesAss{
+    font-size: 40px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    color: black;
+    padding: 40px;
+    background-color: white;
+    opacity: 0.7;
+    width: 875px;
+    position: relative;
+    transform: skewX(45deg);
+    transform: skewY(-15deg);
+    padding-left: -20px;
+}
+
+/* botao da lista */
+
+.botaoFilmes{
+    position: relative;
+    width: 945px;
+    margin-top: 0px;
+
+}
+.containerLista{
+    background-color: white;
+    opacity: 0.7;
+    position: relative;
+    width: 945px;
+    transform: skewY(-15deg);
+    transition: 0.5s;
+    font-size: 30px;
+    font-family:'Nunito', sans-serif;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+} 
+
+.containerLista:hover{
+    background-color: #ffaa00;
+    transform:skewX(-20deg), translate(-10%,-10%);
+    text-decoration: none;
+}
+
+/* Página dos trailers */
+
+iframe{
+    height: 500px;
+    width: 900px;
+}
+
+.mainFNAF, .mainFreira, .mainHomemAranha, .mainJoker, .mainNadaNoFront, .mainBatman, .mainFlash, .mainTopGun{
+    display: flex;
+    justify-content: center;
+    padding-top:200px;
+}
+
+.fundoFilmes {
+    box-shadow: #FADC63 0px 0px 40px 4px;
+}
+
+/* Página de quem somos */
+
+.box1Section{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.box1{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 140px;
+    margin-top: 200px;
+    background-color: #ffffffa4;
+    padding: 40px;
+    border-radius: 20px;
+    font-size: 30px;
+    font-family:'Nunito', sans-serif;
+}
+
+.box2Section{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.box2{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 1100px;
+    margin-top: 200px;
+    background-color: #ffffffa4;
+    padding: 40px;
+    border-radius: 20px;
+    font-size: 30px;
+    font-family:'Nunito', sans-serif;
+}
+.box3Section{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.box3{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 140px;
+    margin-top: 300px;
+    margin-bottom: 100px;
+    background-color: #ffffffa4;
+    padding: 40px;
+    border-radius: 20px;
+    font-size: 30px;
+    font-family:'Nunito', sans-serif;
+}
+
+.bombinhoSigma{
+    position: absolute;
+    width: 710px;
+    margin-top: 120px;
+    margin-left: 900px;
+}
+
+.logoQS{
+    position: absolute;
+    width: 710px;
+    margin-top: 250px;
+    margin-left: 200px;
+    border-radius: 20px;
+}
+
+.fontPlus{
+    font-size: 40px;
+}
+
+.bomba1{
+    position: absolute;
+    width: 800px;
+    margin-top: 280px;
+    margin-left: 1000px;
+}
+
