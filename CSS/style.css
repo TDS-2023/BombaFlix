@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Nunito:wght@700&family=Roboto+Condensed:ital@1&family=Roboto+Mono:wght@400;700&display=swap');
 
-* {
+* { /*Foi explicado pra gente que cada navegador funciona de um jeito, então zeramos as proporções base, para depois o navegador ler linha a linha do código, sem dar nenhum erro */
     padding: 0;
     margin: 0;
     font-family: 'Bree serif' , serif;
+    
 }
 
 /* Bodys dos sites */
@@ -533,7 +534,7 @@ ul li:hover .titulo{
     text-decoration: none;
     color: #ffffff;
     cursor: pointer;
-    transition: ease-out 1s;
+    transition: ease-out 1s; /* realiza a transição lenta apenas no final */
 }
 
 .containerGun:hover {
