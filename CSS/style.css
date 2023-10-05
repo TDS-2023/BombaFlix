@@ -11,7 +11,7 @@
 .bodyRegistro {
     font-family: 'Bree Serif', serif;
     background-image: linear-gradient(45deg, #ffaa00 40%, #000000 100%, #eeeeee 5%);
-    height: 110vh;
+    height: 100%;
     background-size: cover; /* informa ao navegador que ele deve se certificar de que a imagem cobrirá sempre o container inteiro */
     background-position: center;
     background-repeat: no-repeat; /* definir como uma imagem de fundo se repete na tela */
@@ -20,7 +20,7 @@
 .bodyLogin {
     font-family: 'Bree Serif', serif;
     background-image: linear-gradient(45deg, #ffaa00 40%, #000000 100%, #eeeeee 5%);
-    height: 100vh;
+    height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -29,7 +29,7 @@
 .bodyPlanos {
     font-family: 'Bree Serif', serif;
     background-image: linear-gradient(45deg, #ffaa00 40%, #000000 100%, #eeeeee 5%);
-    height: 100vh;
+    height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -39,7 +39,7 @@
     background-image:linear-gradient(45deg, #ffaa00 40%,#000000 100%,#eeeeee 5%);
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
+    height: 100%;
     background-size: cover;
 }
 
@@ -47,7 +47,7 @@
     background-image:linear-gradient(35deg, #ffaa00 10%,#000000 100%,#eeeeee 5%);
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
+    height: 100%;
     background-size: cover;
 }
 
@@ -294,7 +294,7 @@ h2 {
 
 .copyrightFilmes {
     padding-left: 10px;
-    position: absolute;
+    display: flex;
 }
 
 .copyrightPlanos {
@@ -499,49 +499,150 @@ ul li:hover .titulo{
     padding: 40px;
     background-color: white;
     opacity: 0.7;
-    width: 875px;
+    width: 900px;
     position: relative;
-    transform: skewX(45deg);
-    transform: skewY(-15deg);
-    padding-left: -20px;
+    text-align: center;
 }
 
-/* botao da lista */
-
-.botaoFilmes{
+.containerFilmes {
+    writing-mode: vertical-lr;
     position: relative;
-    width: 945px;
-    margin-top: 0px;
-
+    overflow: hidden;
 }
-.containerGun, .containerAranha, .containerFlash, .containerBatman, .containerNadaNoFront, .containerJoker, .containerFNAF, .containerFreira{
-    background-color: white;
+
+/* botões dos trailers */
+
+.containerGun {
+    background-image: url(/IMAGENS/TopGunBanner.png);
     opacity: 0.75;
-    position: relative;
-    width: 945px;
-    transform: skewY(-15deg);
-    transition: 0.5s;
+    width: 122.57px;
     font-size: 30px;
     font-family:'Nunito', sans-serif;
     text-decoration: none;
     color: black;
-    padding: 5px;
-} 
+    cursor: pointer;
+}
 
-.containerGun:hover, .containerAranha:hover, .containerFlash:hover, .containerBatman:hover, .containerNadaNoFront:hover, .containerJoker:hover, .containerFNAF:hover, .containerFreira:hover{
-    transform:skewX(-20deg), translate(-10%,-10%), scale(1.1);
-    text-decoration: none;
+.containerGun:hover {
+    width: 390px;
+    height: 590px;
     opacity: 1;
-}
-.containerAranha:hover{
-    background-image: url(/IMAGENS/aranha.png);
-    padding-bottom: 100px;
-}
-.containerFreira:hover{
-    background-image: url(/IMAGENS/topgun2.png);
-    padding-bottom: 250px;
+    transition: 1s;
 }
 
+.containerFNAF {
+    background-image: url(/IMAGENS/FnafBanner.png);
+    opacity: 0.75;
+    width: 122.57px;
+    font-size: 30px;
+    font-family:'Nunito', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.containerFNAF:hover {
+    width: 390px;
+    height: 590px;
+    opacity: 1;
+    transition: 1s;
+}
+.containerAranha {
+    background-image: url(/IMAGENS/HomemAranhaBanner.png);
+    opacity: 0.75;
+    width: 122.57px;
+    font-size: 30px;
+    font-family:'Nunito', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.containerAranha:hover {
+    width: 390px;
+    height: 590px;
+    opacity: 1;
+    transition: 1s;
+}
+.containerFlash {
+    background-image: url(/IMAGENS/TheFlashBanner.png);
+    opacity: 0.75;
+    width: 122.57px;
+    font-size: 30px;
+    font-family:'Nunito', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.containerFlash:hover {
+    width: 390px;
+    height: 590px;
+    opacity: 1;
+    transition: 1s;
+}
+.containerBatman {
+    background-image: url(/IMAGENS/TheBatmanBanner.png);
+    opacity: 0.75;
+    width: 122.57px;
+    font-size: 30px;
+    font-family:'Nunito', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.containerBatman:hover {
+    width: 390px;
+    height: 590px;
+    opacity: 1;
+    transition: 1s;
+}
+
+.containerNadaNoFront {
+    background-image: url(/IMAGENS/NadaNoFrontBanner.png);
+    opacity: 0.75;
+    width: 122.57px;
+    font-size: 30px;
+    font-family:'Nunito', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.containerNadaNoFront:hover {
+    width: 390px;
+    height: 590px;
+    opacity: 1;
+    transition: 1s;
+}
+.containerJoker {
+    background-image: url(/IMAGENS/JokerBanner.png);
+    opacity: 0.75;
+    width: 122.57px;
+    font-size: 30px;
+    font-family:'Nunito', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.containerJoker:hover {
+    width: 390px;
+    height: 590px;
+    opacity: 1;
+    transition: 1s;
+}
+.containerFreira {
+    background-image: url(/IMAGENS/FreiraBanner.png);
+    opacity: 0.75;
+    width: 122.57px;
+    font-size: 30px;
+    font-family:'Nunito', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.containerFreira:hover {
+    width: 390px;
+    height: 590px;
+    opacity: 1;
+    transition: 1s;
+}
 
 /* Página dos trailers */
 
@@ -623,7 +724,7 @@ iframe{
 .bombinhoSigma{
     position: absolute;
     width: 710px;
-    margin-top: 120px;
+    margin-top: 150px;
     margin-left: 900px;
 }
 
@@ -657,7 +758,6 @@ iframe{
     background-image: linear-gradient(145deg, #000000 -5%, #FADC63 50%, #000000 105%);
     border-radius: 50px;
     width: 450px;
-    
     text-align: center;
 }
 .escritaAranha{
@@ -673,5 +773,5 @@ iframe{
     width: 500px;
 }
 .escritaFreira{
-    width: 200px;
+    width: 100px;
 }
