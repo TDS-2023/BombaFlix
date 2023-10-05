@@ -11,7 +11,7 @@
 .bodyRegistro {
     font-family: 'Bree Serif', serif;
     background-image: linear-gradient(45deg, #ffaa00 40%, #000000 100%, #eeeeee 5%);
-    height: 100%;
+    height: 110vh;
     background-size: cover; /* informa ao navegador que ele deve se certificar de que a imagem cobrirá sempre o container inteiro */
     background-position: center;
     background-repeat: no-repeat; /* definir como uma imagem de fundo se repete na tela */
@@ -20,7 +20,7 @@
 .bodyLogin {
     font-family: 'Bree Serif', serif;
     background-image: linear-gradient(45deg, #ffaa00 40%, #000000 100%, #eeeeee 5%);
-    height: 100%;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -29,7 +29,7 @@
 .bodyPlanos {
     font-family: 'Bree Serif', serif;
     background-image: linear-gradient(45deg, #ffaa00 40%, #000000 100%, #eeeeee 5%);
-    height: 100%;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -47,7 +47,7 @@
     background-image:linear-gradient(35deg, #ffaa00 10%,#000000 100%,#eeeeee 5%);
     background-repeat: no-repeat;
     background-position: center;
-    height: 100%;
+    height: 100vh;
     background-size: cover;
 }
 
@@ -661,6 +661,39 @@ iframe{
     box-shadow: #FADC63 0px 0px 40px 4px;
 }
 
+.escritaTrailer, .escritaAranha, .escritaNadaNoFront, .escritaJoker, .escritaFNAF, .escritaFreira{
+    position: absolute;
+    margin-top: -100px;
+    font-family:'Nunito', sans-serif;
+    font-size: 50px;
+    color:#030200;
+    border-color: #1A1B27;
+    border: solid;
+    border-radius: 50px;
+    width: 450px;
+    background-image: linear-gradient(10deg, #ffaa00 10%, #ffffff );
+    text-align: center;
+}
+.escritaAranha{
+    width: 1000px;
+}
+
+.escritaNadaNoFront{
+    width: 600px;
+}
+
+.escritaJoker {
+    width: 200px;
+}
+
+.escritaFNAF {
+    width: 580px;
+}
+
+.escritaFreira {
+    width: 300px;
+}
+
 /* Página de quem somos */
 
 .box1Section{
@@ -747,31 +780,7 @@ iframe{
     margin-left: 1000px;
 }
 
-.escritaTrailer, .escritaAranha, .escritaNadaNoFront, .escritaJoker, .escritaFNAF, .escritaFreira{
-    position: absolute;
-    margin-top: -100px;
-    font-family:'Nunito', sans-serif;
-    font-size: 50px;
-    color:#030200;
-    border-color: #1A1B27;
-    border: solid;
-    background-image: linear-gradient(145deg, #000000 -5%, #FADC63 50%, #000000 105%);
-    border-radius: 50px;
-    width: 450px;
+.escritaContato {
+    margin: 1.5rem 0 2rem 0;
     text-align: center;
-}
-.escritaAranha{
-    width: 1000px;
-}
-.escritaNadaNoFront{
-    width: 600px;
-}
-.escritaJoker{
-    width: 200px;
-}
-.escritaFNAF{
-    width: 500px;
-}
-.escritaFreira{
-    width: 100px;
 }
