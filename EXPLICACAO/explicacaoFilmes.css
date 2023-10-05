@@ -1,0 +1,237 @@
+/* Ajuda de Yan */
+
+.containerFilmes {
+    writing-mode: vertical-lr;
+    position: relative;
+    overflow: hidden;
+}
+
+.containerGun {
+    background-image: url(/IMAGENS/TopGunBanner.png);
+    opacity: 0.75;
+    width: 122.57px;
+    font-size: 30px;
+    font-family:'Nunito', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+    transition: ease-out 1s; /* realiza a transição lenta apenas no final */
+}
+
+.containerGun:hover {
+    width: 390px;
+    height: 590px;
+    opacity: 1;
+    transition: 1s;
+}
+
+.containerFNAF {
+    background-image: url(/IMAGENS/FnafBanner.png);
+    opacity: 0.75;
+    width: 122.57px;
+    font-size: 30px;
+    font-family:'Nunito', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    transition: ease-out 1s;
+}
+
+.containerFNAF:hover {
+    width: 390px;
+    height: 590px;
+    opacity: 1;
+    transition: 1s;
+}
+.containerAranha {
+    background-image: url(/IMAGENS/HomemAranhaBanner.png);
+    opacity: 0.75;
+    width: 122.57px;
+    font-size: 30px;
+    font-family:'Nunito', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    transition: ease-out 1s;
+}
+
+.containerAranha:hover {
+    width: 390px;
+    height: 590px;
+    opacity: 1;
+    transition: 1s;
+}
+.containerFlash {
+    background-image: url(/IMAGENS/TheFlashBanner.png);
+    opacity: 0.75;
+    width: 122.57px;
+    font-size: 30px;
+    font-family:'Nunito', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    transition: ease-out 1s;
+}
+
+.containerFlash:hover {
+    width: 390px;
+    height: 590px;
+    opacity: 1;
+    transition: 1s;
+}
+.containerBatman {
+    background-image: url(/IMAGENS/TheBatmanBanner.png);
+    opacity: 0.75;
+    width: 122.57px;
+    font-size: 30px;
+    font-family:'Nunito', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    transition: ease-out 1s;
+}
+
+.containerBatman:hover {
+    width: 390px;
+    height: 590px;
+    opacity: 1;
+    transition: 1s;
+}
+
+.containerNadaNoFront {
+    background-image: url(/IMAGENS/NadaNoFrontBanner.png);
+    opacity: 0.75;
+    width: 122.57px;
+    font-size: 30px;
+    font-family:'Nunito', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    transition: ease-out 1s;
+}
+
+.containerNadaNoFront:hover {
+    width: 390px;
+    height: 590px;
+    opacity: 1;
+    transition: 1s;
+}
+.containerJoker {
+    background-image: url(/IMAGENS/JokerBanner.png);
+    opacity: 0.75;
+    width: 122.57px;
+    font-size: 30px;
+    font-family:'Nunito', sans-serif;
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: ease-out 1s;
+}
+
+.containerJoker:hover {
+    width: 390px;
+    height: 590px;
+    opacity: 1;
+    transition: 1s;
+}
+.containerFreira {
+    background-image: url(/IMAGENS/FreiraBanner.png);
+    opacity: 0.75;
+    width: 122.57px;
+    font-size: 30px;
+    font-family:'Nunito', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    transition: ease-out 1s;
+}
+
+.containerFreira:hover {
+    width: 390px;
+    height: 590px;
+    opacity: 1;
+    transition: 1s;
+}
+ 
+/* botões dos trailers */
+
+.containerGun {
+    background-image: url(/IMAGENS/TopGunBanner.png);
+    opacity: 0.75;
+    width: 122.57px;
+    font-size: 30px;
+    font-family:'Nunito', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+    transition: ease-out 1s; /* realiza a transição lenta apenas no final */
+}
+
+.containerGun:hover {
+    width: 390px;
+    height: 590px;
+    opacity: 1;
+    transition: 1s;
+}
+
+.escritaFilmes a{
+    font-size: 30px;
+    font-family:'Nunito', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+}
+.filmesAss{
+    font-size: 38.3px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    color: #000000;
+    padding: 40px;
+    background-color: white;
+    opacity: 0.7;
+    width: 900px;
+    position: relative;
+    text-align: center;
+}
+
+/* Página dos trailers */
+
+iframe{
+    height: 500px;
+    width: 900px;
+}
+
+.mainFNAF, .mainFreira, .mainHomemAranha, .mainJoker, .mainNadaNoFront, .mainBatman, .mainFlash, .mainTopGun{
+    display: flex;
+    justify-content: center;
+    padding-top:200px;
+}
+
+.fundoFilmes {
+    box-shadow: #FADC63 0px 0px 40px 4px;
+}
+
+.escritaTrailer, .escritaAranha, .escritaNadaNoFront, .escritaJoker, .escritaFNAF, .escritaFreira{
+    position: absolute;
+    margin-top: -100px;
+    font-family:'Nunito', sans-serif;
+    font-size: 50px;
+    color:#030200;
+    border-color: #1A1B27;
+    border: solid;
+    border-radius: 50px;
+    width: 450px;
+    background-image: linear-gradient(10deg, #ffaa00 10%, #ffffff );
+    text-align: center;
+}
+.escritaAranha{
+    width: 1000px;
+}
+
+.escritaNadaNoFront{
+    width: 600px;
+}
+
+.escritaJoker {
+    width: 200px;
+}
+
+.escritaFNAF {
+    width: 580px;
+}
+
+.escritaFreira {
+    width: 300px;
+}

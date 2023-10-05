@@ -1,0 +1,35 @@
+nav {
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+}
+
+.containerNav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative; /* é usado quando queremos alterar a posição de um elemento tendo como referência a posição inicial dele */
+}
+
+.barraNav {
+    font-size: 1.25rem; /* é o tamanho de fonte do elemento-raiz do documento */
+}
+
+.botoesNav, .msg {
+    text-decoration: none;
+}
+
+.botoesNav {
+    padding: 0 4rem;
+    margin: 0;
+    color: white;
+    font-weight: 500;
+    font-size: 28px;
+    transition: font-size 0.4s;
+}
+
+.botoesNav:hover {
+    font-size: 35px;
+} 

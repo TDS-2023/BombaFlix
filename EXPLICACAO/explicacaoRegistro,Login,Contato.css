@@ -1,0 +1,192 @@
+/* Toda a parte de caixa de formulário e informações do registro, login e contato */ 
+
+/* Bodys dos sites */
+
+.bodyRegistro {
+    font-family: 'Bree Serif', serif;
+    background-image: linear-gradient(45deg, #ffaa00 40%, #000000 100%, #eeeeee 5%);
+    height: 110vh;
+    background-size: cover; /* informa ao navegador que ele deve se certificar de que a imagem cobrirá sempre o container inteiro */
+    background-position: center;
+    background-repeat: no-repeat; /* definir como uma imagem de fundo se repete na tela */
+}
+
+.bodyLogin {
+    font-family: 'Bree Serif', serif;
+    background-image: linear-gradient(45deg, #ffaa00 40%, #000000 100%, #eeeeee 5%);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bodyContato {
+    background-image:linear-gradient(45deg, #ffaa00 40%,#000000 100%,#eeeeee 5%);
+    background-repeat: no-repeat; 
+    background-position: center;
+    height: 100%;
+    background-size: cover;
+}
+
+/* Classes padrões nas 3 páginas */
+
+.forma {
+    display: flex;
+    justify-content: center;
+    padding-top: 8rem;
+}
+
+h2 {
+    margin: 1.5rem 0 2rem 0;
+    text-align: center;
+}
+
+.caixaDeRequerimento {
+    padding-left: 16px;
+    opacity: 0.75;
+}
+
+.caixaDeTexto {  
+    display: flex;
+    border-radius: 50px;
+    border-style: none;
+    outline: none; /* contorno da caixa */
+    margin-top: 8px;
+    padding: 12px 24px;
+    width: 250px;
+    background-color: #eaeeed;
+}
+
+.caixaDeTexto:focus {
+    opacity: 0.7;
+}
+
+.forma-botao {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+/* Página de registro */ 
+
+.formulario1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw; /* vh e vw = janela de exibição do site (100vh = 100% da tela) */
+    height: 60vh;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px 0px #FADC63;
+    background-color: white;
+}
+
+.botaoRegistro {
+    padding: 12px 48px;
+    border-radius: 50px;
+    color: white;
+    margin-top: 1rem;
+    cursor: pointer;
+    background-color: #1A1B27;
+    font-weight: 400;
+    width: 100%;
+}
+
+
+.botaoRegistro:hover {
+    opacity: 0.8;
+    transform: scale(1.13);
+    transition: transform 1s;
+}
+
+
+.registro {
+    padding-left: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #2a91d6;
+}
+
+.registro:hover {
+    opacity: 0.8;
+}
+
+/* Página de Login */
+
+.formulario2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+    height: 75vh;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px 0px #FADC63;
+    background-color: white;
+}
+
+.botaoLogin {
+    padding: 12px 48px;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border-width: 0;
+    background-color: #1A1B27;
+    font-weight: 400;
+    width: 100%;
+}
+
+.botaoLogin:hover {
+    opacity: 0.8;
+    transform: scale(1.13);
+    transition: transform 1s;
+}
+
+/* Página de contato */
+
+.formulario3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+    height: 75vh;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px 0px #FADC63;
+    background-color: white;
+}
+
+.escritaContato {
+    margin: 1.5rem 0 2rem 0;
+    text-align: center;
+}
+
+
+.areaDeTexto {
+    width: 255px;
+    height: 66px;
+    margin-left: 2%;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #000000;
+    border-radius: 20px;
+    border-style: none;
+    outline: none; /* contorno da caixa */
+    padding: 2px 14px;
+    background-color: #eaeeed;
+}
+
+.botaoContato {
+    padding: 12px 48px;
+    border-radius: 50px;
+    color: white;
+    margin-top: 3rem;
+    cursor: pointer;
+    background-color: #1A1B27;
+    font-weight: 400;
+    width: 100%;
+}
+
+.botaoContato:hover {
+    opacity: 0.8;
+    transform: scale(1.13);
+    transition: transform 1s;
+}

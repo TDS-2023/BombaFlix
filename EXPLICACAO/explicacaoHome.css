@@ -1,0 +1,83 @@
+.box1Section{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.box1{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 140px;
+    margin-top: 200px;
+    background-color: #ffffffa4;
+    padding: 40px;
+    border-radius: 20px;
+    font-size: 30px;
+    font-family:'Nunito', sans-serif;
+}
+
+.box2Section{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.box2{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 1100px;
+    margin-top: 200px;
+    background-color: #ffffffa4;
+    padding: 40px;
+    border-radius: 20px;
+    font-size: 30px;
+    font-family:'Nunito', sans-serif;
+}
+.box3Section{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.box3{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 140px;
+    margin-top: 300px;
+    margin-bottom: 100px;
+    background-color: #ffffffa4;
+    padding: 40px;
+    border-radius: 20px;
+    font-size: 30px;
+    font-family:'Nunito', sans-serif;
+}
+
+.bombinho2{
+    position: absolute;
+    width: 710px;
+    margin-top: 150px;
+    margin-left: 900px;
+}
+
+.logoQS{
+    position: absolute;
+    width: 710px;
+    margin-top: 250px;
+    margin-left: 200px;
+    border-radius: 20px;
+}
+
+.fontPlus{
+    font-size: 40px;
+}
+
+.bomba1{
+    position: absolute;
+    width: 800px;
+    margin-top: 280px;
+    margin-left: 1000px;
+}
