@@ -59,6 +59,14 @@
     background-size: cover;
 }
 
+.bodyContato {
+    background-image:linear-gradient(45deg, #ffaa00 40%,#000000 100%,#eeeeee 5%);
+    background-repeat: no-repeat; 
+    background-position: center;
+    height: 100%;
+    background-size: cover;
+}
+
 /* Barra dos botões de navegação */
 
 .containerNav {
@@ -307,6 +315,11 @@ h2 {
     padding-left: 10px;
 }
 
+.copyrightContato {
+    display: flex;
+    padding-left: 10px;
+}
+
 .ulFilmes {
     position: relative;
     display: flex;
@@ -332,10 +345,9 @@ ul{
     padding-top: 40px;
 }
 
-.ulLogin{
+.ulContato {
     position: relative;
     display: flex;
-    gap: 25px;
     padding-top: 80px;
 }
 
@@ -483,19 +495,19 @@ ul li:hover .titulo{
 
 .containerTudo{
     padding-top: 150px;
-    padding-left: 400px; 
+    padding-left: 500px; 
 }
 .escritaFilmes a{
     font-size: 30px;
     font-family:'Nunito', sans-serif;
     text-decoration: none;
-    color: black;
+    color: #ffffff;
 }
 .filmesAss{
     font-size: 38.3px;
     font-family: 'Roboto Mono', monospace;
     font-weight: bold;
-    color: black;
+    color: #000000;
     padding: 40px;
     background-color: white;
     opacity: 0.7;
@@ -519,8 +531,9 @@ ul li:hover .titulo{
     font-size: 30px;
     font-family:'Nunito', sans-serif;
     text-decoration: none;
-    color: black;
+    color: #ffffff;
     cursor: pointer;
+    transition: ease-out 1s;
 }
 
 .containerGun:hover {
@@ -537,7 +550,8 @@ ul li:hover .titulo{
     font-size: 30px;
     font-family:'Nunito', sans-serif;
     text-decoration: none;
-    color: black;
+    color: #ffffff;
+    transition: ease-out 1s;
 }
 
 .containerFNAF:hover {
@@ -553,7 +567,8 @@ ul li:hover .titulo{
     font-size: 30px;
     font-family:'Nunito', sans-serif;
     text-decoration: none;
-    color: black;
+    color: #ffffff;
+    transition: ease-out 1s;
 }
 
 .containerAranha:hover {
@@ -569,7 +584,8 @@ ul li:hover .titulo{
     font-size: 30px;
     font-family:'Nunito', sans-serif;
     text-decoration: none;
-    color: black;
+    color: #ffffff;
+    transition: ease-out 1s;
 }
 
 .containerFlash:hover {
@@ -585,7 +601,8 @@ ul li:hover .titulo{
     font-size: 30px;
     font-family:'Nunito', sans-serif;
     text-decoration: none;
-    color: black;
+    color: #ffffff;
+    transition: ease-out 1s;
 }
 
 .containerBatman:hover {
@@ -602,7 +619,8 @@ ul li:hover .titulo{
     font-size: 30px;
     font-family:'Nunito', sans-serif;
     text-decoration: none;
-    color: black;
+    color: #ffffff;
+    transition: ease-out 1s;
 }
 
 .containerNadaNoFront:hover {
@@ -618,7 +636,8 @@ ul li:hover .titulo{
     font-size: 30px;
     font-family:'Nunito', sans-serif;
     text-decoration: none;
-    color: black;
+    color: #FFFFFF;
+    transition: ease-out 1s;
 }
 
 .containerJoker:hover {
@@ -634,7 +653,8 @@ ul li:hover .titulo{
     font-size: 30px;
     font-family:'Nunito', sans-serif;
     text-decoration: none;
-    color: black;
+    color: #ffffff;
+    transition: ease-out 1s;
 }
 
 .containerFreira:hover {
@@ -780,7 +800,56 @@ iframe{
     margin-left: 1000px;
 }
 
+/* Página de contato */
+
 .escritaContato {
     margin: 1.5rem 0 2rem 0;
     text-align: center;
+}
+
+.formulario3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+    height: 75vh;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px 0px #FADC63;
+    background-color: white;
+}
+
+.areaDeTexto {
+    width: 255px;
+    height: 66px;
+    margin-left: 2%;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #000000;
+    border-radius: 20px;
+    border-style: none;
+    outline: none; /* contorno da caixa */
+    padding: 2px 14px;
+    background-color: #eaeeed;
+
+}
+
+.botaoContato {
+    padding: 12px 48px;
+    border-radius: 50px;
+    color: white;
+    margin-top: 3rem;
+    cursor: pointer;
+    background-color: #1A1B27;
+    font-weight: 400;
+    width: 100%;
+}
+
+.botaoContato:hover {
+    opacity: 0.8;
+    transform: scale(1.13);
+    transition: transform 1s;
+}
+
+.botaoContato:focus {
+    opacity: 0.7;
 }
